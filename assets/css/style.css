@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /*todas as fontes do site carreda ariel
+    se nao tiver carrega helvetica, se nao tive outra fonte qualuer mas sem serif*/
+}
+
+body {
+
+    background: #F2F2F2;
+}
+
+.content-center {
+    width: 100%; 
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FFF; /* cor de fundo branco*/
+    border-radius: 15px; /* borda arendondad*/
+    }
+
+.content-center .text-center {
+    text-align: center;
+}
+
+.content-center img {
+    width: 70%;
+
+}
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input,
+.content-center button {
+    width: 100%;
+    padding: 10px 5px; /* tamanho total do paddin que é a terceira camada*/
+    border: none;  /*  sem borda no campos imput*/
+    outline: none; /*tira a cor da borda quando clicado, voce pode colocar ate cor no outline*/
+}
+
+.content-center input{
+    border-bottom-color: #ccc; /* corda borda*/
+    border-bottom-style: solid; /* quero que seja uma borda lisa*/
+    border-bottom-width: 2px;   /*largura do botao*/
+    margin-bottom: 10px;
+
+}
+
+.content-center input:focus{ /*quando tiver preenchendo trocar a cor da borda*/
+    border-bottom-color: #D07335
+}
+
+.content-center button {
+    background-color: #D07335;
+    color: #FFF;  /*colocar o  enviar em branco*/
+}
+
+.content-center button:hover {  /*hover junto sem espaço, ele efetua açao no botao*/
+    background-color: #b55b28; 
+    cursor: pointer;  /*mao do maouse*/
+}
+
+.content-center button:active {  /*quando clica no botao e muda de cor*/
+    background-color: #c14e0e; 
+}
+
+header a {
+    color: #666;
+    text-decoration: none;  /*tire a linha*/ /*overline linha em cima*/
+
+}
+
+header a:visited {  /*quando o link ja foi clicado*/
+    color: #000000;
+}
+
+header a:hover {  /*quando passa o mouse sabe que ja visitou o link*/
+    text-decoration: underline;
+}
+
+header a:focus {  /*quando passa o mouse sabe que ja visitou o link*/
+    color: red;
+}
+
+header a:active {  /*quando passa o mouse sabe que ja visitou o link*/
+    color: yellow;
+}
+
+header h1 {
+    font-size: 2.5em;  /*1.0 é o tamanha normal da fonte*/
+    text-align: center;
+    margin: 50px auto; /*50 em cima e em baixo automatico*/
+}
+
+footer{
+    font-size: .8em;
+    text-align: center;
+
+}
+
+
+.content-tabuada {
+    width: 100%; 
+    text-align: center;
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.content-tabuada table{
+    width: 100%;
+    border-collapse: collapse /*para tirar a borda*/
+
+}
+
+.content-tabuada td {  /* pega todos os td e da espaco entre eles*/
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/*.content-tabuada tbody tr:nth-child(3){  /* nth passa para uma tederminada posição*/
+/*.content-tabuada tbody tr:nth-child(even)     começa numero impar*/
+.content-tabuada tbody tr:nth-child(odd){  /* odd = par ou impar - começa no par se trocar para even*/
+    background-color: rgba(0,0,0,.05); /* .05 %   tem o rgb sao as 3 cores e rgba =  alfa de transparaencia*/
+}
+
+.content-tabuada tbody tr:hover{
+    background-color: rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+#valorA{
+
+        width: 100%;
+        padding: 10px;
+}
+
+/*   tirar a bolinha da lista  padding tira a margem */
+.todo{  
+    list-style: none;
+    padding: 0;
+}
+
+/* estapsamento entre as linhas */
+.todo li{
+    padding: 10px;
+    border-bottom: #ccc 1px solid;
+}
+
+.todo li input{
+    width: initial;
+    margin-left: 10px;
+
+}
+
+/* li.complete é proque eu qeuro que seja ele e nao uma classe */
+.todo li.complete{
+    text-decoration: line-through;
+    color: #999;
+    cursor: not-allowed;
+}
+/* # é para pegar o id do new-task*/
+#new-task{  
+    width: 100%;
+    padding: 10px;
+}
+
+.todo button {
+     width: initial;
+     color: #FFF;
+     background-color: red;
+     float: right;
+     min-width: 30px;
+}
